@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 03 JS</title>
+        <style>
+            
+            body{
+                background-color: rgb(117, 119, 93);
+            }
+            h1 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(182, 175, 188);
+            }
+            h2{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: rgb(223, 210, 210);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Curso de JavaScript </h1>
+        <h2>Aula 03</h2>
+
+
+        <script> 
+            /*Existem duas formas de conversão 
+            1- Direta que você aplica quando declara a variável
+            2- "Indireta" que você aplica separado
+            3EX- Pode colocar apenas: Number(n) 
+            ..porém as vezes é necessário declarar se os números são reais ou inteiros,portanto as 2 primeiras formas não se descartam.*/
+
+            //exemplo da forma-1
+            var numb1 = Number.parseFloat(window.prompt ("Digite outro número: "))
+            numb2 = parseFloat (numb1)
+            
+            //exemplo da forma-2
+            var numb1 = window.prompt ("Digite um número: ")
+            numb1 = parseFloat(numb1)
+
+            /*De número para string:
+            1-String (n)
+            2- n.toString()*/
+
+            var soma = numb1 + numb2
+
+            /*Uma forma mais simples de concatenar "Template Strings" -${}- com a string entre -``-
+            #Forma básica: string dentro de aspas duplas ou simples e +(fora das aspas) para concatenação de number, strings...*/
+            window.alert(`A soma entre ${numb1} e ${numb2} é igual a ${soma}`)
+
+
+        </script>
+    </body>
+
+</html>
